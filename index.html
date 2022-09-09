@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  My balance
-  $921.48
+    <!--Styles-->
+    <link rel="stylesheet" href="index.css" />
 
-  Spending - Last 7 days
+    <title>Frontend Mentor | Expenses chart component</title>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <header>
+          <div>
+            <p class="color--white">My balance</p>
+            <h2 class="color--white">$921.48</h2>
+          </div>
+          <div>
+            <img
+              src="/images/logo.svg"
+              alt="white circle overlapping dark brown circle"
+            />
+          </div>
+        </header>
 
-  Total this month
-  $478.33
+        <section>
+          <div class="card">
+            <div class="card-header">
+              <h2>Spending - Last 7 days</h2>
+            </div>
+            <div class="card-content"></div>
+            <hr />
+            <div class="card-footer">
+              <p class="color--grey">Total this month</p>
+              <div class="totals">
+                <div class="total-amount">
+                  <h1>$478.33</h1>
+                </div>
+                <div class="total-gains">
+                  <p class="bold">+2.4%</p>
+                  <p class="color--grey">from last month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">thecoderrob</a>.
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
